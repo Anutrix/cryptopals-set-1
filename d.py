@@ -38,11 +38,14 @@ def decode_line(str):
 
 max=0
 final=""
+t=""
 with open('4.txt') as file:
 	for line in file:
 		score,ans = decode_line(line.rstrip("\n"));
-		#print(score, ans)
+		#if(score!=0):
+		#	print(score, ans)
 		if score>max:
 			max=score
 			final=ans
-print(max, final)
+			t=line
+print(max, final,t)
